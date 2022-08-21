@@ -5,33 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio ǀ Yuran Porto</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre">Sobre mim</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#tecnologias">Técnologias</a>
-        </nav>
-            <div class="social-icons">
-                <picture>
-                    <source media="(max-width: 610px)" srcset="images/GitHub-Mark-Light-32px.png">
-                    <img src="images/GitHub-Mark-Light-64px.png" alt="GitHub Logo">
-                </picture>
-                <picture>
-                    <source media="(max-width: 610px)" srcset="images/LinkedIn-Mark-Light-32px.png">
-                    <img src="images/LinkedIn-Mark-Light-64px.png" alt="LinkedIn Logo">
-                </picture>
-            </div>
+    <div id="menu-bar">
+        <div id="content-menu">
+            <nav>
+                <div id="menu-links">
+                    <ul>
+                        
+                            <li><a href="#page1">Inicio</a></li>
+                            <li><a href="#page2">Sobre mim</a></li>
+                            <li><a href="#page3">Projetos</a</li>
+                            <li><a href="#page4">Técnologias</a></li>
+                        
+                    </ul>
+                </div>
+                <div id="social-icons">
+                    <a href="https://www.linkedin.com/in/yuran-porto-pires-b7137023b/" target="_blank">
+                        <picture>
+                            <source media="(max-width: 610px)" srcset="images/GitHub-Mark-Light-32px.png">
+                            <img src="images/GitHub-Mark-Light-64px.png" alt="GitHub Logo" max-width="30px">
+                        </picture>
+                    </a>
+                    <a href="https://github.com/YuranJack" target="_blank">
+                        <picture>
+                            <source media="(max-width: 610px)" srcset="images/LinkedIn-Mark-Light-32px.png">
+                            <img src="images/LinkedIn-Mark-Light-64px.png" alt="LinkedIn Logo" max-width="30px">
+                        </picture>
+                    </a>
+                </div>
+            </nav>
+        </div>
     </div>
+
     <main>
         <section class="dark-color" id="page1">
             <div class="content-left">
-                <a name="inicio">
-                    <p>Olá, meu nome é Yuran Porto Pires.</p><br>
-                </a>
+                <p>Olá, meu nome é Yuran Porto Pires.</p><br>
                 <p>Sou estudande de Desenvolvimento Back-end.</p><br>
                 <p>Seja bem-vindo.</p><br>
             </div>
@@ -44,21 +56,17 @@
             </div>
         </section>
 
-        <section class="dark-color">
+        <section class="dark-color" id="page3">
             <div class="content-left">
-                <a name="projetos">
-                    <h1>Projetos:</h1>
-                </a>
+                <h1>Projetos:</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ullam temporibus, eveniet ducimus reiciendis dolorem quibusdam laudantium modi porro itaque repellat? Vel eos exercitationem corrupti reprehenderit! Tempora obcaecati possimus dicta.</p>
             </div>
         </section class="ligth-color">
 
         <section class="ligth-color" id="page4">
             <div class="content-right">
-                <a name="tecnologias">
-                    <h1>Técnologias:</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur ipsa asperiores beatae hic dolorem obcaecati corporis officiis? Perspiciatis qui iure quae alias excepturi saepe, iusto sit obcaecati minima odio libero?</p>
-                </a>
+                <h1>Técnologias:</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur ipsa asperiores beatae hic dolorem obcaecati corporis officiis? Perspiciatis qui iure quae alias excepturi saepe, iusto sit obcaecati minima odio libero?</p>
             </div>
         </section>
     </main>
