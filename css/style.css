@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/*Fonte(s) de toda a pagina*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,300;1,900&display=swap');
+
+:root {
+    --dark-blue-black: #060314;
+    --dark-blue-shadow: #090F26;
+    --dark-blue-strong: #101F38;
+    --dark-blue-middle: #172E4D;
+    --dark-blue-transparent-middle: #172e4d3b;
+    --dark-blue-light: #20385E;
+    --dark-blue-transparent-light: #20385e;
+
+    /*Fonte(s)*/
+    --text-font: 'Merriweather', serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--text-font);
+    font-weight: light;
+    font-style: italic;
+    text-decoration: none;
+    color: white
+}
+
+.container {
+    min-height: 50px;
+    padding: 10px;
+    background-color: var(--dark-blue-black);
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+nav > a{
+    font-size: 1.5em;
+    font-weight: 900;
+    font-style: normal;
+    padding: 10px;
+}
+
+div.images{
+    padding: 0px 15px;
+}
+
+div.images img{
+    max-width: 50px;
+}
+
+.dark-color {
+    background-color: var(--dark-blue-shadow);
+    background-image: linear-gradient(var(--dark-blue-shadow), var(--dark-blue-transparent-middle), var(--dark-blue-shadow));
+    min-height: 100vh;
+}
+
+.ligth-color {
+    background-color: var(--dark-blue-middle);
+    background-image: linear-gradient(var(--dark-blue-middle), var(--dark-blue-transparent-light), var(--dark-blue-middle));
+    min-height: 100vh;
+}
+
+section{
+    padding-left: 30px;
+}
+#page1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-center{
+    max-width: 740px;
+    font-size: 2em;
+}
+footer {
+    background-color: var(--dark-blue-black);
+}
