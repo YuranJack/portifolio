@@ -3,6 +3,21 @@
 /*Fonte(s) de toda a pagina*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,300;1,900&display=swap');
 
+/*
+
+-> ADICIONAR ICONES DAS TECNOLIGAS
+
+-> ADICIONAR DIV PARA TEXTOS DAS TECNLOGIAS
+
+-> CONTINUAR A CONFIGURAR OS TEXTOS PARA QUE FIQUEM MAIS RESPONSIVOS
+
+-> ADICIONAR FOTO DIAGONAL RECORTADA
+
+-> ADICIONAR DIV E BOX DE PROJETOS
+
+-> REFINAR FOOTER
+*/
+
 :root {
     --dark-blue-black: #060314;
     --dark-blue-menu: rgba(6, 3, 20, 0.51);
@@ -35,7 +50,8 @@ html {
 }
 
 #menu-bar {
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
     min-height: 70px;
 
     background-color: var(--dark-blue-menu);
@@ -144,6 +160,35 @@ section {
     background-attachment: fixed;
 }
 
+#page4 > article {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 80vw;
+    width: auto;
+    margin: 0px auto;
+    font-size: 2em;
+}
+
+#page4 > article > .technology-icons{
+    max-width: 40%;
+    min-height: auto;
+    margin: 0px 60px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: max-content;
+    grid-gap: 5px;
+}
+
+#page4 ul{
+    display: flex;
+}
+#page4 img {
+    width: 100%;
+    height: auto;
+    min-width: 90px;
+}
 footer {
     background-color: var(--dark-blue-black);
     min-height: 55px;
