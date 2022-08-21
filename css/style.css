@@ -2,7 +2,10 @@
 
 /*Fonte(s) de toda a pagina*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,300;1,900&display=swap');
-
+/*
+REFAZER TODO O CSS DA BARRA DE MENU E CONTINUAR A CONFIGURAR OS TEXTOS
+PARA QUE FIQUEM MAIS RESPONSIVOS
+*/
 :root {
     --dark-blue-black: #060314;
     --dark-blue-shadow: #090F26;
@@ -10,7 +13,7 @@
     --dark-blue-middle: #172E4D;
     --dark-blue-transparent-middle: #172e4d3b;
     --dark-blue-light: #20385E;
-    --dark-blue-transparent-light: #20385e;
+    --dark-blue-transparent-light: #294779;
 
     /*Fonte(s)*/
     --text-font: 'Merriweather', serif;
@@ -34,48 +37,72 @@
     justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
+    font-size: 1vw;
 }
 
 nav > a{
-    font-size: 1.5em;
+    font-size: clamp(1em, 16px, 10em);
     font-weight: 900;
     font-style: normal;
     padding: 10px;
 }
 
-div.images{
+div.social-icons{
     padding: 0px 15px;
 }
 
-div.images img{
+div.social-icons img{
     max-width: 50px;
 }
 
+section {
+    padding: 0px 30px;
+}
+
 .dark-color {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: var(--dark-blue-shadow);
     background-image: linear-gradient(var(--dark-blue-shadow), var(--dark-blue-transparent-middle), var(--dark-blue-shadow));
     min-height: 100vh;
 }
 
 .ligth-color {
-    background-color: var(--dark-blue-middle);
-    background-image: linear-gradient(var(--dark-blue-middle), var(--dark-blue-transparent-light), var(--dark-blue-middle));
-    min-height: 100vh;
-}
-
-section{
-    padding-left: 30px;
-}
-#page1{
     display: flex;
     align-items: center;
+    justify-content: right;
     flex-wrap: wrap;
+    min-height: 100vh;
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.377);
 }
 
-.content-center{
+
+.dark-color > .content-left {
     max-width: 740px;
     font-size: 2em;
 }
+
+.ligth-color > .content-right {
+    max-width: 740px;
+    font-size: 2em;
+}
+
+#page2 {
+    background-image: url(../images/bg01-1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#page4 {
+    background-image: url(../images/bg02-1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 footer {
     background-color: var(--dark-blue-black);
+    min-height: 55px;
+    padding: 10px 30px;
 }
