@@ -47,6 +47,7 @@ html {
     box-sizing: border-box;
 }
 
+/* -- Barra de menu --*/
 #menu-bar {
     width: 100vw;
     max-width: 100%;
@@ -58,6 +59,10 @@ html {
     position: fixed;
     top: -2;
     border-bottom: solid 1px rgba(23, 46, 77, 0.721);
+}
+
+#hamburger-menu {
+    display: none;
 }
 
 nav {
@@ -96,14 +101,16 @@ nav {
 }
 
 #social-icons img:hover{
-    filter: brightness(10%)
+    filter: brightness(10%);
+    transition: color 0.3s;
 }
 
 #social-icons img {
-    max-width: 50px;
+    max-width: 3vw;
     margin-right:7px;
 }
 
+/* --- Fim menu --- */
 
 p {
     text-indent: 1em;
@@ -123,10 +130,17 @@ section {
         var(--dark-blue-transparent-middle),
         var(--dark-blue-shadow)
     );
+
     min-height: 100vh;
+
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.dark-color > .content-left {
+    max-width: 40vw;
+    font-size: 2em;
 }
 
 .ligth-color {
@@ -139,17 +153,12 @@ section {
 }
 
 
-.dark-color > .content-left {
-    max-width: 740px;
-    font-size: 2em;
-}
-
 .ligth-color > .content-right {
-    max-width: 740px;
+    max-width: 40vw;
     font-size: 2em;
 }
 
-#inicio{
+#inicio {
     background-image: url(../images/foto-01.png);
     background-size: 90% 100%;
     background-position: right;
@@ -157,6 +166,9 @@ section {
 
 }
 
+.small-image{
+    display: none;
+}
 
 #inicio p{
     text-indent: 0px;
@@ -168,6 +180,7 @@ section {
     background-size: cover;
     background-attachment: fixed;
 }
+
 
 #tecnologias {
     background-image: url(../images/bg02-1080.jpg);
@@ -200,10 +213,11 @@ section {
 #tecnologias ul{
     display: flex;
 }
+
 #tecnologias img {
     width: 100%;
     height: auto;
-    min-width: 90px;
+    min-width: 2vw;
 }
 footer {
     background-color: var(--dark-blue-black);
@@ -211,12 +225,114 @@ footer {
     padding: 10px 30px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     * {
-        min-width: 100vw;
+        font-size: 20px;
     }
+
+    #menu-bar {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+        min-width: 50%;
+        position: fixed;
+        left: 90%;
+        top: 1%;
+    }
+
+    section {
+        padding: 0px 10px;
+    }
+
+    .dark-color {
+        background-image: linear-gradient(
+            var(--dark-blue-shadow),
+            var(--dark-blue-middle),
+            var(--dark-blue-shadow)
+            );
+        justify-content: center;
+    }
+
+    .dark-color > .content-left {
+        max-width: 90%;
+        font-size: 2em;
+    }
+
+    .ligth-color {
+        background-image: linear-gradient(
+            var(--dark-blue-middle),
+            var(--dark-blue-transparent-light),
+            var(--dark-blue-middle)
+        );
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .ligth-color > .content-right {
+        max-width: 90%;
+        font-size: 2em;
+    }
+
     #inicio {
-        background-color: var(--dark-blue-shadow);
         background-image: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .small-image {
+        display: flex;
+        margin-top: 5px;
+    }
+    
+    #sobre {
+        background-image: linear-gradient(
+            var(--dark-blue-middle),
+            var(--dark-blue-transparent-light),
+            var(--dark-blue-middle)
+        );
+    }
+
+    #sobre .small-image {
+
+    }
+
+    #tecnologias {
+        background-image: linear-gradient(
+            var(--dark-blue-middle),
+            var(--dark-blue-transparent-light),
+            var(--dark-blue-middle)
+        );
+    }
+
+    #tecnologias > article {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        gap: 15px;
+    
+        max-width: 80vw;
+        width: auto;
+        margin: 0px auto;
+        font-size: 2em;
+    }
+    
+    #tecnologias > article > .technology-icons{
+        max-width: 40%;
+        min-height: auto;
+        margin: 0px 60px;
+    
+        display: grid;
+        grid-template-columns: 130px 130px;
+        grid-template-rows: max-content;
+        grid-gap: 10px;
+    }
+    
+    footer{
+        margin: auto;
+        font-size: 20px;
+        text-align: center;
     }
 }
