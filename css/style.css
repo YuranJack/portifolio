@@ -45,6 +45,7 @@ html {
     font-style: italic;
 
     text-decoration: none;
+    text-align: justify;
     color: white;
     box-sizing: border-box;
 }
@@ -142,25 +143,25 @@ section {
     font-size: 2em;
 }
 
-#page1 p{
+#inicio p{
     text-indent: 0px;
 }
 
-#page2 {
+#sobre {
     background-image: url(../images/bg01-1080.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-#page4 {
+#tecnologias {
     background-image: url(../images/bg02-1080.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-#page4 > article {
+#tecnologias > article {
     display: flex;
     justify-content: space-between;
 
@@ -170,7 +171,7 @@ section {
     font-size: 2em;
 }
 
-#page4 > article > .technology-icons{
+#tecnologias > article > .technology-icons{
     max-width: 40%;
     min-height: auto;
     margin: 0px 60px;
@@ -181,10 +182,10 @@ section {
     grid-gap: 5px;
 }
 
-#page4 ul{
+#tecnologias ul{
     display: flex;
 }
-#page4 img {
+#tecnologias img {
     width: 100%;
     height: auto;
     min-width: 90px;
