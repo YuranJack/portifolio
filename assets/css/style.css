@@ -135,9 +135,9 @@ nav a img:hover{
     grid-template-columns: 55vw 45vw;
 
     background-image: linear-gradient(
-        var(--dark-blue-light),
+        var(--dark-blue-middle),
         var(--dark-blue-transparent-light),
-        var(--dark-blue-light)
+        var(--dark-blue-middle)
     );
     background-attachment: fixed;
     box-shadow: inset 0px 2px 15px var(--dark-blue-black);
