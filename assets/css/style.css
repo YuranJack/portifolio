@@ -168,13 +168,27 @@ nav a img:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: var(--dark-blue-menu);
     width: 50vw;
     max-height: 60vh;
+    box-shadow: inset -5px -5px 10px var(--dark-blue-menu);
+}
+
+.tecnologias-container img{
+    max-width: 12vw;
+    margin: 2vw;
+}
+
+.content-box .tecnologias-container{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw;
 }
 
 footer {
     height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--dark-blue-black);
 }
 
