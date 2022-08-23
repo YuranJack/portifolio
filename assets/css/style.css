@@ -196,9 +196,6 @@ nav a img:hover{
     grid-template-columns: 15vw 15vw 15vw;
 }
 
-
-
-
 footer {
     height: 9vh;
     display: flex;
@@ -297,9 +294,32 @@ footer div {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: gray;
+        background-color: var(--dark-blue-menu);
         width: 90vw;
         height: 43vh;
+        box-shadow: inset -5px -5px 10px var(--dark-blue-menu);
+        overflow: hidden;
+    }
+
+    .projetos-container img{
+        max-width: 13vw;
+        margin: 1vw;
+        margin-left: 2vw;
+    }
+    
+    .content-box .tecnologias-container{
+        display: grid;
+        grid-template-columns: 15vw 15vw 15vw;
+    }
+    
+    .tecnologias-container img{
+        max-width: 12vw;
+        margin: 2vw;
+    }
+    
+    .content-box .tecnologias-container{
+        display: grid;
+        grid-template-columns: 15vw 15vw 15vw;
     }
 }
 
