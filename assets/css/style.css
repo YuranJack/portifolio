@@ -290,9 +290,17 @@ footer div {
         padding-left: 2vw;
     }
 
+    .itens-container img {
+        max-width: 85vw;
+    }
+
     .itens-container {
         margin: 0;
         align-items: center;
+    }
+
+    .itens-container .centralize-itens img{
+        display: none;
     }
 
     .align-up {
@@ -348,15 +356,15 @@ footer div {
     }
 
     .grid-container-dark {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .grid-container-light {
-        font-size: 3vw;
+        font-size: 5vw;
     }
 }
 
-@media screen and (max-width: 1000px) and (orientation: landscape){
+@media screen and (orientation: landscape) and (max-width: 18cm) {
     body {
         overflow-x: hidden;
     }
