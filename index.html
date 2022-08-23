@@ -6,41 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio ǀ Yuran Porto</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <script type="text/javascript" src="js/menu.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="menu-bar">
-        <div id="content-menu">
-            <nav>
-                <div id="menu-links">
-                    <ul>
-                            <li><a href="#inicio">Inicio</a></li>
-                            <li><a href="#sobre">Sobre mim</a></li>
-                            <li><a href="#projetos">Projetos</a</li>
-                            <li><a href="#tecnologias">Técnologias</a></li>
-                        
-                    </ul>
-                </div>
-                <div id="social-icons">
-                    <a href="https://github.com/YuranJack" target="_blank">
-                        <picture>
-                            <source media="(max-width: 610px)" srcset="images/GitHub-Mark-Light-32px.png">
-                            <img src="images/GitHub-Mark-Light-64px.png" alt="GitHub Logo" max-width="30px">
-                        </picture>
-                    </a>
-                    <a href="https://www.linkedin.com/in/yuran-porto-pires-b7137023b/" target="_blank">
-                        <picture>
-                            <source media="(max-width: 610px)" srcset="images/LinkedIn-Mark-Light-32px.png">
-                            <img src="images/LinkedIn-Mark-Light-64px.png" alt="LinkedIn Logo" max-width="30px">
-                        </picture>
-                    </a>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <div id="hamburger-menu">
-        <img src="images/hamburger-square.png" alt="" width="15%">
-    </div>
+    <header>
+        <nav class="nav-list">
+            <div class="mobile-menu">
+                <img src="images/hamburger-square.png" alt="Menu" width="50px">
+            </div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#tecnologias">Técnilogias</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#" class="github-icon"><img src="images/GitHub-Mark-Light-64px.png" alt="Github icon" width="50px"></a>
+                <a href="#" class="linkedin-icon"><img src="images/LinkedIn-Mark-Light-64px.png" alt="linedIn icon" width="50px"></a>
+            </div>
+        </nav>
+    </header>
     <main>
         <section class="dark-color" id="inicio">
             <div class="content-left">
@@ -92,8 +78,9 @@
         </section>
     </main>
     <footer>
-        <p>E-mail para contato: yuranporto@gmail.com</p>
+        <p>E-mail para contato:</p>
         <p>Feito por Yuran Porto Pires</p>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
 </html>
