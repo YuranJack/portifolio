@@ -271,7 +271,6 @@ footer div {
       .mobile-menu {
         display: block;
       }
-
     /** Fim da barra de menu **/
     
     .grid-container-dark {
@@ -290,15 +289,26 @@ footer div {
 
     .itens-container {
         margin: 0;
+        align-items: center;
     }
 
-    .itens-container img {
+    .align-up {
+        align-self: flex-start;
+    }
+
+    .align-low {
+        align-self: flex-end;
+        margin: 1vh;
+    }
+
+    .itens-container .centralize-image {
         max-width: 70vw;
+        align-self: flex-start;
     }
 
     .content-box {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         background-color: var(--dark-blue-menu);
         width: 90vw;
@@ -307,25 +317,22 @@ footer div {
         overflow: hidden;
     }
 
+    .content-box .projetos-container{
+        display: grid;
+        grid-template-columns: 28vw 28vw 28vw;
+    }
+
     .projetos-container img{
-        max-width: 13vw;
-        margin: 1vw;
-        margin-left: 2vw;
+        max-width: 25vw;
     }
     
     .content-box .tecnologias-container{
         display: grid;
-        grid-template-columns: 15vw 15vw 15vw;
+        grid-template-columns: 28vw 28vw 28vw;
     }
     
-    .tecnologias-container img{
-        max-width: 12vw;
-        margin: 2vw;
-    }
-    
-    .content-box .tecnologias-container{
-        display: grid;
-        grid-template-columns: 15vw 15vw 15vw;
+    .tecnologias-container img {
+        max-width: 30vw;
     }
 }
 
