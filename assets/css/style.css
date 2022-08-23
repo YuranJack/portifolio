@@ -110,7 +110,10 @@ nav a img:hover{
     margin: 8px;
     transition: 0.3s;
 }
-  
+
+article  a img{
+    display: none;
+}
 
 /* --- Fim da barra de menu */
 
@@ -227,7 +230,7 @@ footer div {
         padding: 0;
     }
 
-    body{
+    body {
         overflow-x: hidden;
     }
 
@@ -340,18 +343,61 @@ footer div {
     nav {
         width: 10vw;
         height: 10vw;
-        margin-left: 88vw;
+        margin-left: 84vw;
+        margin-top: 1.5vw;
     }
 
     .grid-container-dark {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .grid-container-light {
-        font-size: 5vw;
+        font-size: 3vw;
     }
 }
 
+@media screen and (orientation: landscape){
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        width: 100vw;
+        height: 12vh;
+        padding: 3vh;
+        background-color: var(--dark-blue-black);
+        opacity: 100%;
+        backdrop-filter: none;
+
+        justify-content: flex-start;
+    }
+
+    .nav-list {
+        justify-content: flex-start;
+    }
+    .nav-list li .text-menu {
+        letter-spacing: 1vw;
+        margin: 0;
+    }
+
+    article a > img {
+        display: inline;
+        margin: 1vh 1vh;
+        max-width: 5px;
+    }
+
+    .grid-container-dark {
+        font-size: 5vh;
+    }
+
+    .grid-container-light {
+        font-size: 5vh;
+    }
+
+    footer {
+        height: 10vw;
+    }
+}
 .nav-list.active {
     transform: translateX(0);
   }
