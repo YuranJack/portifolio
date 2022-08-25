@@ -206,6 +206,10 @@ nav ul {
     grid-template-columns: 50vw 15vw;
 }
 
+.aboutContainer .leftContent p{
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.342);
+}
+
 .aboutContainer .rigthConent {
     justify-content: flex-end;
     text-align: left;
@@ -255,7 +259,9 @@ nav ul {
     font-family: var(--text-font);
     font-style: italic;
     font-size: 15pt;
+    text-indent: 15pt;
 }
+
 /* FOOTER */
 footer {
     display: flex;
