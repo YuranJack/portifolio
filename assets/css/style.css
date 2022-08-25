@@ -321,6 +321,12 @@ footer {
         display: grid;
         grid-template-columns: 90vw;
     }
+
+    .socialIcons{
+        top: 80%;
+        right: 1.5%;
+    }
+
     /* DIVSOÕES DA ESQUERDA*/
     .leftContent{
         margin: 0;
@@ -377,6 +383,11 @@ footer {
 
     .contentMenu ul li {
         margin: 6vh 0;
+    }
+
+    .socialIcons{
+        top: 70%;
+        right: 1.5%;
     }
 
     /*  FOTOS */
