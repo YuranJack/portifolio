@@ -4,137 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuran Porto</title>
+    <title>Yuran Porto ǀ Desenvolvedor Back-end</title>
     <link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/png">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-          <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-          <ul class="nav-list">
-            <li class="text-menu"><a href="#inicio">Início</a></li>
-            <li class="text-menu"><a href="#sobre">Sobre</a></li>
-            <li class="text-menu"><a href="#projetos">Projetos</a></li>
-            <li class="text-menu"><a href="#tecnologias">Técnologias</a></li>
-            <div class="icon-menu">
-                <li class="social-icon">
-                    <a href="https://github.com/YuranJack" target="_blank">
-                        <img src="assets/images/icons/GitHub-Mark-Light-64px.png" alt="GitHub-icon" width="45vw">
-                    </a>
-                </li>
-                <li class="social-icon">
-                    <a href="https://www.linkedin.com/in/yuran-porto-pires-b7137023b/" target="_blank">
-                        <img src="assets/images/icons/LinkedIn-Mark-Light-64px.png" alt="LinkedIn-incon" width="45vw">
-                    </a>
-                </li>
-            </div>
-          </ul>
-        </nav>
-      </header>
-
-    <main>
-        <a name="inicio"></a>
-        <section class="grid-container-dark">
-            <article class="itens-container">
-                <div class="centralize-itens, align-low">
-                    <p>Olá, meu nome é Yuran Porto.</p><br>
-                    <p>Sou estudande de Desenvolvimento Back-end.</p><br>
-                    <p>Seja bem-vindo.</p><br>
+    <header class="headerContainer">
+        <div class="header">
+           <div class="checkboxContainer">
+                <div class="checkboxWrapper">
+                    <!-- <input type="checkbox" id="checkbox">
+                    <label class="checkbox" for="checkbox">
+                        <img  class="menuIcon" src="assets/images/icons/hamburger-square.png" alt="" width="50px">
+                    </label> -->
+                    <script src="assets/js/mobile-navbar.js"></script>
+                    <img  class="menuIcon" src="assets/images/icons/hamburger-square.png" alt="" width="50px" onclick="Mudarestado('escondido')">
                 </div>
-            </article>
-            <article class="itens-container">
-                <div class="centralize-itens, align-up">
-                    <picture> 
-                        <source media="(max-width: 950px)" srcset="assets/images/pictures/foto-01-pq.png">
-                        <img src="assets/images/pictures/foto-01-g.png" alt="Yuran Porto - Criador do site">
-                    </picture>
-                </div>
-            </article>
-        </section>
-
-        <a name="sobre"></a>
-        <section class="grid-container-light">
-            <article class="itens-container">
-                <div class="centralize-itens, align-low">
-                    <img src="assets/images/pictures/foto-02.png" alt="Yuran Porto - Criador do site">
-                </div>
-            </article>
-            
-            <article class="itens-container">
-                <div class="centralize-itens, align-up">
-                    <h1>Sobre mim</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iste voluptatem velit natus sequi id officia nam dolorem dolor dolore voluptas consectetur quaerat nulla, ea ducimus doloribus aliquid soluta veniam?</p>
-                    <a href="https://github.com/YuranJack" target="_blank">
-                        <img src="assets/images/icons/GitHub-Mark-Light-64px.png" alt="GitHub-icon" width="45vw">
-                    </a>
-                    <a href="https://www.linkedin.com/in/yuran-porto-pires-b7137023b/" target="_blank">
-                        <img src="assets/images/icons/LinkedIn-Mark-Light-64px.png" alt="LinkedIn-incon" width="45vw">
-                    </a>
-                </div>
-            </article>
-        </section>
-
-        <a name="projetos"></a>
-        <section class="grid-container-dark">
-            <article class="itens-container">
-                <div class="centralize-itens, align-low">
-                    <h1>Projetos</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusamus sint officia rem eveniet iure a quia expedita nam quod, aliquid explicabo, laborum nostrum. Dolorem cum pariatur voluptates maiores eum?</p>
-                </div>
-            </article>
-            <article class="itens-container">
-                <div class="centralize-itens, align-up">
-                    <div class="content-box">
-                        <div class="projetos-container">
-                            <img src="assets/images/pictures/em-breve.png" alt="">
-                            <img src="assets/images/pictures/em-breve.png" alt="">
-                            <img src="assets/images/pictures/em-breve.png" alt="">
-                            <img src="assets/images/pictures/em-breve.png" alt="">
-                            <img src="assets/images/pictures/em-breve.png" alt="">
-                            <img src="assets/images/pictures/em-breve.png" alt="">
-                        </div>
+                <div class="menu" id="escondido">
+                    <div class="contentMenu">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Sobre mim</a>
+                            </li>
+                            <li>
+                                <a href="#">Projetos</a>
+                            </li>
+                            <li>
+                                <a href="#">Técnologias</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </article>
-        </section>
-
-        <a name="tecnologias"></a>
-        <section class="grid-container-light">
-            <article class="itens-container">
-                <div class="centralize-itens, align-low">
-                    <div class="content-box">
-                        <div class="tecnologias-container">
-                            <img src="assets/images/icons/python-icon.png" alt="">
-                            <img src="assets/images/icons/django-icon.png" alt="">
-                            <img src="assets/images/icons/html5-icon.png" alt="">
-                            <img src="assets/images/icons/css-3-icon.png" alt="">
-                            <img src="assets/images/icons/git-icon.png" alt="">
-                            <img src="assets/images/icons/git-hub-icon.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="itens-container">
-                <div class="centralize-itens, align-up">
-                    <h1>Técnologias</h1>
-                    <p>Técnologias que estou estudando, e que uso no momento. <br>
-                        Passe o mouse sobre o icone da técnoliga, para ver uma breve descrição, e meu nivel de conhecimento sobre ela.
-                    </p>
-                </div>
-            </article>
-        </section>
-    </main>
-    <script src="assets/js/mobile-navbar.js"></script>
-    <footer>
-        <div>
-            <p>Feito por Yuran Porto</p>
-            <p>E-mail: </p>
+           </div>
         </div>
+    </header>
+    <main>
+        <div class="homeContainer">
+            <div class="leftContent">
+                    <h1>Yuran Porto</h1>
+                    <h2>Desenvolvedor Back-end</h2>
+                    <div class="socialLinks">
+                        <div><a href="https://github.com/YuranJack" target="_blank">GitHub</a></div>
+                        <div><a href="https://www.linkedin.com/in/yuran-porto-pires-b7137023b/" target="_blank">LinkedIn</a></div>
+                    </div>
+            </div>
+            <div class="rigthConent">
+                <img class="picture01" alt="Yuran Porto - Desenvolvedor Back-end">
+            </div>
+        </div>
+        <div class="centralizeBox">
+            <div class="aboutContainer">
+                <div class="leftContent">
+                    <h1>Sobre mim</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus deleniti vel nemo quos natus tenetur ipsam, laudantium perspiciatis ut voluptatem accusantium cupiditate doloremque similique suscipit molestiae repellendus accusamus sapiente dolorum?</p>
+                </div>
+                <div class="rigthContent">
+                    <img class="picture02" alt="Yuran Porto - Desenvolvedor Back-end">
+                </div>
+            </div>
+        </div>
+        <div class="projectCentralize">
+            <div class="projectsContainer">
+                <div class="projectImage">
+                    <img src="assets/images/pictures/em-breve.png" alt="imagem de projeto" class="projectThumb">
+                </div>
+                <div class="projectDescribe">
+                    <h1>Projeto 1</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut perferendis, unde alias, magni repellat enim sapiente velit quaerat officia recusandae voluptate laboriosam? At, illum? Nihil, adipisci? Totam optio nemo architecto?</p>
+                </div>
+            </div>
+
+            <div class="projectsContainer">
+                <div class="projectImage">
+                    <img src="assets/images/pictures/em-breve.png" alt="imagem de projeto" class="projectThumb">
+                </div>
+                <div class="projectDescribe">
+                    <h1>Projeto 2</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut perferendis, unde alias, magni repellat enim sapiente velit quaerat officia recusandae voluptate laboriosam? At, illum? Nihil, adipisci? Totam optio nemo architecto?</p>
+                </div>
+            </div>
+
+            <div class="projectsContainer">
+                <div class="projectImage">
+                    <img src="assets/images/pictures/em-breve.png" alt="imagem de projeto" class="projectThumb">
+                </div>
+                <div class="projectDescribe teste">
+                    <h1>Projeto 3</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut perferendis, unde alias, magni repellat enim sapiente velit quaerat officia recusandae voluptate laboriosam? At, illum? Nihil, adipisci? Totam optio nemo architecto?</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>Criado por Yuran Porto</p>
+        <p>E-mail:</p>
     </footer>
 </body>
 </html>
