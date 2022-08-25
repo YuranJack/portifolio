@@ -11,51 +11,53 @@
 <body>
     <header class="headerContainer">
         <div class="header">
-           <div class="checkboxContainer">
-                <div class="checkboxWrapper">
-                    <!-- <input type="checkbox" id="checkbox">
-                    <label class="checkbox" for="checkbox">
-                        <img  class="menuIcon" src="assets/images/icons/hamburger-square.png" alt="" width="50px">
-                    </label> -->
-                    <script src="assets/js/mobile-navbar.js"></script>
-                    <img  class="menuIcon" src="assets/images/icons/hamburger-square.png" alt="" width="50px" onclick="Mudarestado('escondido')">
+            
+            <script src="assets/js/mobile-navbar.js"></script>
+            <img  class="menuIcon" src="assets/images/icons/hamburger-square.png" alt="" width="50px" onclick="Mudarestado('escondido')">
+
+            <div class="socialIcons">
+                <a href="https://github.com/YuranJack" target="_blank"><img src="assets/images/icons/GitHub-Mark-64px.png" width="40px"></a>
+                <a href="https://www.linkedin.com/in/yuran-porto-pires-b7137023b/" target="_blank"><img src="assets/images/icons/LinkedIn-Mark-64px.png" width="40px"></a>
+            </div>
+
+            <div class="menu" id="escondido">
+                <div class="contentMenu">
+                    <ul>
+                        <li>
+                            <a href="#inicio">Home</a>
+                        </li>
+                        <li>
+                            <a href="#sobre">Sobre mim</a>
+                        </li>
+                        <li>
+                            <a href="#projetos">Projetos</a>
+                        </li>
+                        <li>
+                            <a href="#">Técnologias</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="menu" id="escondido">
-                    <div class="contentMenu">
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Sobre mim</a>
-                            </li>
-                            <li>
-                                <a href="#">Projetos</a>
-                            </li>
-                            <li>
-                                <a href="#">Técnologias</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-           </div>
+            </div>
         </div>
     </header>
+
     <main>
+        <a name="inicio"></a>
         <div class="homeContainer">
             <div class="leftContent">
-                    <h1>Yuran Porto</h1>
-                    <h2>Desenvolvedor Back-end</h2>
-                    <div class="socialLinks">
-                        <div><a href="https://github.com/YuranJack" target="_blank">GitHub</a></div>
-                        <div><a href="https://www.linkedin.com/in/yuran-porto-pires-b7137023b/" target="_blank">LinkedIn</a></div>
-                    </div>
+                <h1>Yuran Porto</h1>
+                <h2>Desenvolvedor Back-end</h2>
+                <div class="socialLinks">
+                    <div><a href="https://github.com/YuranJack" target="_blank">GitHub</a></div>
+                    <div><a href="https://www.linkedin.com/in/yuran-porto-pires-b7137023b/" target="_blank">LinkedIn</a></div>
+                </div>
             </div>
             <div class="rigthConent">
                 <img class="picture01" alt="Yuran Porto - Desenvolvedor Back-end">
             </div>
         </div>
         <div class="centralizeBox">
+            <a name="sobre"></a>
             <div class="aboutContainer">
                 <div class="leftContent">
                     <h1>Sobre mim</h1>
@@ -66,6 +68,7 @@
                 </div>
             </div>
         </div>
+        <a name="projetos"></a>
         <div class="projectCentralize">
             <div class="projectsContainer">
                 <div class="projectImage">
@@ -99,9 +102,10 @@
 
         </div>
     </main>
+
     <footer>
         <p>Criado por Yuran Porto</p>
-        <p>E-mail:</p>
+        <p>E-mail: yuranporto@gmail.com</p>
     </footer>
 </body>
 </html>
