@@ -196,8 +196,9 @@ nav ul {
     align-items: center;
     width: 12vw;
     height: 5vh;
+    margin-top: 30px;
 
-    border: 2px solid rgb(12, 12, 12);
+    border: 1.5px solid rgb(12, 12, 12);
     border-collapse: collapse;
 }
 
@@ -472,9 +473,17 @@ footer {
         border-collapse: collapse;
     }
 
+    .socialLinks{
+        margin-right: 40px;
+    }
+
     .aboutContainer{
         display: grid;
         grid-template-columns: 90vw;
+    }
+
+    .aboutContainer p{
+        font-size: 15pt;
     }
 
     .socialIcons{
@@ -517,11 +526,12 @@ footer {
     }
 
     .leftContent h1{
-        margin: 0;
+        margin-right: 20px;
         font-size: 40pt;
     }
 
-    .leftContent p{
+    .leftContent h2{
+        margin-right: 40px;
         font-size: 15pt;
     }
 
