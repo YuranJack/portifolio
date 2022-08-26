@@ -54,7 +54,7 @@ p{
 
     background-color: var(--shadow-transparent-color);
     backdrop-filter: blur(2px);
-    
+
     width: 25vw;
     height: 87vh;
     border: 2px solid var(--ligth-transparent-color);
@@ -100,6 +100,10 @@ p{
     cursor: pointer;
 }
 
+.menuIcon:hover{
+    opacity: 50%;
+}
+
 .checkboxWrapper:checked{
     display: none;
 }
@@ -133,6 +137,10 @@ p{
     position: fixed;
     top: 10%;
     right: 1.5%;
+}
+
+.socialIcons img:hover{
+    opacity: 50%;
 }
 
 nav ul {
