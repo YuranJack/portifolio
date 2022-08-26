@@ -43,9 +43,6 @@ p{
 }
 
 /* MENU */
-#checkbox{
-    display: none;
-}
 
 #escondido{
     display: none;
@@ -57,6 +54,7 @@ p{
 
     background-color: var(--shadow-transparent-color);
     backdrop-filter: blur(2px);
+    
     width: 25vw;
     height: 87vh;
     border: 2px solid var(--ligth-transparent-color);
@@ -68,6 +66,8 @@ p{
     opacity: 0;
     transform: translateX(25px);
     animation-fill-mode: forwards;
+
+    overflow: hidden;
 }
 
 .contentMenu ul{
