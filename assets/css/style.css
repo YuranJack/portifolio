@@ -97,6 +97,7 @@ p{
     position: fixed;
     top: 1vh;
     right: 1vw;
+    cursor: pointer;
 }
 
 .checkboxWrapper:checked{
@@ -241,6 +242,7 @@ nav ul {
     content: url(../images/pictures/foto-02-circle.png);
     max-width: 25vw;
 }
+
 /* TÉCNOLOGIAS */
 .tecnologiasCentralize{
     display: flex;
@@ -275,6 +277,8 @@ nav ul {
     flex-direction: column;
     justify-self: center;
     align-self: center;
+
+    margin-left: 3vw;
 }
 
 .tecnologiasText h1 {
@@ -310,6 +314,7 @@ p.text-font {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
 }
+
 /* Icones das tecnologias */
 .htmlIcon:hover {
     content: url(../images/icons/html5-orginal-color.png);
@@ -410,7 +415,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
 
     /* MENU */
     #escondido{
@@ -462,6 +467,33 @@ footer {
         right: 1.5%;
     }
 
+    /* Técnologias */
+    .tecnologiasContainer {
+        display: grid;
+        grid-template-columns: 80vw;
+        margin: 8vh 0;
+    }
+
+    .tecnologiasIcons img {
+        max-width: 100%;
+    }
+
+    .tecnologiasText h1 {
+        font-size: 20pt;
+    }
+    
+    .tecnologiasText p {
+        font-size: 12pt;
+    }
+    
+    
+    .tecnologiasImages{
+        display: grid;
+        grid-template-columns: 33.6% 33.6% 33.6%;
+        column-gap: .2vw;
+        row-gap: 1vh;
+    }
+
     /* DIVSOÕES DA ESQUERDA*/
     .leftContent{
         margin: 0;
@@ -508,7 +540,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape){
+@media screen and (max-width: 1100px) and (orientation: landscape){
 
     /* MENU */
     #escondido{
@@ -523,6 +555,15 @@ footer {
     .socialIcons{
         top: 70%;
         right: 1.5%;
+    }
+
+    /* TÉCNOLOGIAS */
+    
+    .tecnologiasImages{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        column-gap: .2vw;
+        row-gap: 1vh;
     }
 
     /*  FOTOS */
