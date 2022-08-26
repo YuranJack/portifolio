@@ -437,8 +437,6 @@ footer {
     #escondido{
         top: 9%;
         right: 1%;
-    
-        background-color: var(--shadow-color);
         width: 50vw;
         height: 87vh;
     }
@@ -447,8 +445,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        list-style: none;
-    
+        list-style: none;   
         text-align: center;
     }
 
