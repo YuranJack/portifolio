@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuran Porto ǀ Desenvolvedor Back-end</title>
-    <link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/tecnologias.js"></script>
+    <title>Yuran Porto</title>
+    <link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/PNG">
+    <!-- css do menu -->
+    <link rel="stylesheet" href="assets/css/base.css" >
+    <!-- css pagina incial -->
+    <link rel="stylesheet" href="assets/css/inicio.css">
+    <!-- css pagina sobre -->
+    <link rel="stylesheet" href="assets/css/sobre.css">
+    <!-- css técnologias -->
+    <link rel="stylesheet" href="assets/css/tecnologias.css">
+    <!-- css projetos -->
+    <link rel="stylesheet" href="assets/css/projetos.css" >
 </head>
 <body>
     <header class="headerContainer">
@@ -17,11 +25,11 @@
             <img  class="menuIcon" src="assets/images/icons/hamburger-square.png" alt="" width="50px" onclick="Mudarestado('escondido')">
 
             <div class="socialIcons">
-                <a href="https://github.com/YuranJack" target="_blank"><img src="assets/images/icons/GitHub-Mark-64px.png" width="40px"></a>
-                <a href="https://www.linkedin.com/in/yuran-porto-pires-b7137023b/" target="_blank"><img src="assets/images/icons/LinkedIn-Mark-64px.png" width="40px"></a>
+                <a href="https://github.com/YuranPorto" target="_blank"><img src="assets/images/icons/GitHub-Mark-64px.png" width="40px"></a>
+                <a href="https://www.linkedin.com/in/yuran-porto" target="_blank"><img src="assets/images/icons/LinkedIn-Mark-64px.png" width="40px"></a>
             </div>
 
-            <div class="menu" id="escondido" style="display: none;">
+            <nav class="menu" id="escondido" style="display: none;">
                 <div class="contentMenu">
                     <ul>
                         <a href="#inicio">
@@ -47,138 +55,161 @@
                         
                     </ul>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
 
-    <main>
-        <a name="inicio"></a>
-        <div class="homeContainer">
-            <div class="leftContent">
-                <h1>Yuran Porto</h1>
-                <h2><strong>Desenvolvedor Back-end</strong></h2>
-                <div class="socialLinks">
-                    <a href="https://github.com/YuranJack" target="_blank"><div>GitHub</div></a>
-                    <a href="https://www.linkedin.com/in/yuran-porto-pires-b7137023b/" target="_blank"><div>LinkedIn</div></a>
-                </div>
+    <!-- Conteudo -->
+
+    <!-- Inicio -->
+    <a name="inicio"></a>
+    <section class="homeContainer">
+        <article class="leftContent">
+            <h1>Yuran Porto</h1>
+            <h2><strong>Desenvolvedor Back-end</strong></h2>
+            <div class="socialLinks">
+                <a href="https://github.com/YuranPorto" target="_blank"><div>GitHub</div></a>
+                <a href="https://www.linkedin.com/in/yuran-porto" target="_blank"><div>LinkedIn</div></a>
             </div>
-            <div class="rigthConent">
-                <img class="picture01" alt="Yuran Porto - Desenvolvedor Back-end">
-            </div>
+        </article>
+        <aside class="rigthConent">
+            <img class="picture01" src="assets/images/pictures/foto-01-circle.png" alt="Yuran Porto - Desenvolvedor Back-end">
+        </aside>
+    </section>
+
+
+    <!-- Sobre -->
+    <section class="centralizeBox">
+        <a name="sobre"></a>
+        <div class="aboutContainer">
+            <article class="leftContent">
+                <h1>Sobre mim:</h1>
+                    <p>Meu nome é Yuran Porto, atualmente estou fazendo curso técnico em informática para internet na UNICORP-Tec e estudando separadamente sobre, python e django framework.
+
+                    Sou apaixonado pela programação desde muito jovem, semprequerendo saber mais sobre "oque fazer" ou "Como fazer" ascoisas incriveis que vejo pela internet.</p>
+            </article>
+            <aside class="rigthContent">
+                <img class="picture02" src="assets/images/pictures/foto-02-circle.png" alt="Yuran Porto - Desenvolvedor Back-end">
+            </aside>
         </div>
-        <div class="centralizeBox">
-            <a name="sobre"></a>
-            <div class="aboutContainer">
-                <div class="leftContent">
-                    <h1>Sobre mim:</h1>
-                    <p>Meu nome é Yuran Porto, atualmente estou fazendo curso técnico em informática para internet na UNICORP-Tec e estudando separadamente sobre, python e django framework. </p>
-                    <p>Sou apaixonado pela programação desde muito jovem, sempre querendo saber mais sobre "oque fazer" ou "Como fazer" as coisas incriveis que vejo pela internet.</p>
-                </div>
-                <div class="rigthContent">
-                    <img class="picture02" alt="Yuran Porto - Desenvolvedor Back-end">
+    </section>
+
+    <!-- Tecnologias -->
+    <a name="tecnologias"></a>
+    <hr>
+    <h1 class="header-section">Técnologias que ultilizo:</h1>
+    <hr>
+    <section class="container-conteudo">
+        <div class="container-tecnologias">
+
+        <!-- Ajusta cada item -->
+            <!-- Conteudo 01 -->
+            <div class="conteudo-tecnologias">
+                <div class="flex-conteudo">
+                    <img src="assets/images/icons/python-icon.png" width="25%">
+                    <h1><a href="https://www.python.org/about/" target="_blank">Python:</a></h1>
+                    <p>
+                        O Python é uma linguagem de programação amplamente usada em aplicações da Web, desenvolvimento de software, ciência de dados e machine learning (ML). Os desenvolvedores usam o Python porque é eficiente e fácil de aprender e pode ser executada em muitas plataformas diferentes.
+                    </p>
+                    <h2>Ninvel de estudo: <br> Iniciante</h2>
                 </div>
             </div>
+                  <!-- Conteudo 02 -->
+                  <div class="conteudo-tecnologias">
+                    <div class="flex-conteudo">
+                        <img src="assets/images/icons/django-icon.png" width="25%">
+                        <h1><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">Django:</a></h1>
+                        <p>
+                            Django é um framework web Python de alto nível que encoraja o desenvolvimento rápido e design limpo e pragmático. Construído por desenvolvedores experientes, ele resolve grande parte do incômodo do desenvolvimento da Web, para que você possa se concentrar em escrever seu aplicativo sem precisar reinventar a roda
+                        </p>
+                        <h2>Ninvel de estudo: <br> Iniciante</h2>
+                    </div>
+                </div>
+                <!-- Conteudo 03 -->
+                <div class="conteudo-tecnologias">
+                    <div class="flex-conteudo">
+                        <img src="assets/images/icons/html5-icon.png" width="25%">
+                        <h1><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML5:</a></h1>
+                        <p>
+                            HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. "Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas
+                        </p>
+                        <h2>Ninvel de estudo: <br> Iniciante</h2>
+                    </div>
+                </div>
+
+                <!-- Conteudo 04 -->
+                <div class="conteudo-tecnologias">
+                    <div class="flex-conteudo">
+                        <img src="assets/images/icons/css-icon.png" width="25%">
+                        <h1><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS3:</a></h1>
+                        <p>
+                            CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo (en-US) usada para descrever a apresentação de um documento escrito em HTML ou em XML. O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias e é uma das principais linguagens da open web e é padronizada em navagadores web de acordo com as especificação da W3C.
+                        </p>
+                        <h2>Ninvel de estudo: <br> Iniciante</h2>
+                    </div>
+                </div>
+                <!-- Conteudo 05 -->
+                <div class="conteudo-tecnologias">
+                    <div class="flex-conteudo">
+                        <img src="assets/images/icons/git-icon.png" width="25%">
+                        <h1><a href="https://git-scm.com/" target="_blank">GIT:</a></h1>
+                        <p>
+                            Git é um sistema de controle de versão distribuído gratuito e de código aberto projetado para lidar com tudo, desde projetos pequenos a muito grandes com velocidade e eficiência.
+                        </p>
+                        <h2>Ninvel de estudo: <br> Iniciante</h2>
+                    </div>
+                </div>
+                <!-- Conteudo 06 -->
+                <div class="conteudo-tecnologias">
+                    <div class="flex-conteudo">
+                        <img src="assets/images/icons/github-icon.png" width="25%">
+                        <h1><a href="https://github.com/about" target="_blank">GITHUB:</a></h1>
+                        <p>
+                            GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.
+                        </p>
+                        <h2>Ninvel de estudo: <br> Iniciante</h2>
+                    </div>
+                </div>
+        <!-- Fim de cada conteudo -->
         </div>
-            <a name="tecnologias"></a>
-            <div class="tecnologiasCentralize">
-                <div class="tecnologiasContainer">
-                    <div class="leftContent">
-                        <div class="tecnologiasIcons">
-                            <div class="tecnologiasImages">
-                                <img class="htmlIcon" src="assets/images/icons/html5.png">
-                                <img class="cssIcon" src="assets/images/icons/css-3.png">
-                                <img class="pythonIcon" src="assets/images/icons/python.png" id="python">
-                                <img class="djangoIcon" src="assets/images/icons/django-icon.png">
-                                <img class="gitIcon" src="assets/images/icons/git.png">
-                                <img class="githubIcon" src="assets/images/icons/git-hub.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tecnologiasText" id="mainText">
-                        <script src="assets/js/tecnologias.js"></script>
-                        <h1>Técnologias:</h1>
-                        <p>Técnologias que eu uso no momento.</p>
-                        <p>(Passe o mouse no icone de uma técnologia, para ver uma breve descrição sobre ela)</p>
-                    </div>
+    </section>
+    <hr>
 
-                    <div class="tecnologiasText oculto" id="html5Text">
-                        <h1><strong>HTML5:</strong></h1>
-                        <p>HTML5 (<strong>Hypertext Markup Language</strong>, versão 5) É uma linguagem de marcação para a World Wide Web e é uma tecnologia chave da Internet, originalmente proposto por Opera Software. É a quinta versão da linguagem HTML. Esta nova versão traz consigo importantes mudanças quanto ao papel do HTML no mundo da Web, através de novas funcionalidades como semântica e acessibilidade.</p>
-                        <p class="text-font">Fonte: Wikipedia.</p>
-                    </div>
-
-                    <div class="tecnologiasText oculto" id="css3Text">
-                        <h1><strong>Css3</strong>:</h1>
-                        <p>CSS3 é a terceira mais nova versão das famosas <strong>Cascading Style Sheets</strong> (ou simplesmente <strong>CSS</strong>), pela qual se define estilos para um projeto web (página de internet). Com efeitos de transição, imagem, imagem de fundo/background e outros, pode-se criar estilos únicos para seus projetos web, alterando diversos aspectos de design no layout da página.</p>
-                        <p class="text-font">Fonte: Wikipedia.</p>
-                    </div>
-
-                    <div class="tecnologiasText oculto" id="pythonText">
-                        <h1><strong>Python:</strong></h1>
-                        <p><strong>Python</strong> é uma <strong>linguagem de programação</strong> orientada a objetos, funcional, de tipagem dinâmica e forte.</p>
-                        <p>A linguagem Prioriza a legibilidade do código sobre a velocidade ou expressividade. Combina uma sintaxe concisa e clara com os recursos poderosos de sua biblioteca padrão e por módulos e frameworks desenvolvidos por terceiros.</p>
-                        <p class="text-font">Fonte: Wikipedia.</p>
-                    </div>
-
-                    <div class="tecnologiasText oculto" id="djangoText">
-                        <h1><strong>Django Framework</strong>:</h1>
-                        <p><strong>Django é um framework</strong> web <strong>Python</strong> de alto nível que encoraja o desenvolvimento rápido e design limpo e pragmático. Construído por desenvolvedores experientes, ele resolve grande parte do incômodo do desenvolvimento da Web, para que você possa se concentrar em escrever seu aplicativo sem precisar reinventar a roda. É gratuito e de código aberto.</p>
-                        <p class="text-font">Fonte: djangoproject.com</p>
-                    </div>
-
-                    <div class="tecnologiasText oculto" id="gitText">
-                        <h1>Git:</h1>
-                        <p><strong>Git</strong> é um sistema de <strong>controle de versão</strong> distribuído gratuito e de código aberto projetado para lidar com tudo, desde projetos pequenos a muito grandes com velocidade e eficiência.</p>
-                        <p class="text-font">Fonte: git-scm.com</p>
-                    </div>
-
-                    <div class="tecnologiasText oculto" id="githubText">
-                        <h1><strong>GitHub</strong>:</h1>
-                        <p><strong>GitHub</strong> é uma <strong>plataforma de hospedagem</strong> de <strong>código-fonte</strong> e arquivos com <strong>controle de versã</strong>o usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo..</p>
-                        <p class="text-font">Fonte: Wikipedia.</p>
-                    </div>
-                </div>
-            </div>
-
-        <a name="projetos"></a>
-        <div class="projectCentralize">
-            <div class="projectsContainer">
-                <div class="projectImage">
-                    <img src="assets/images/pictures/portifolio.png" alt="imagem de projeto" class="projectThumb">
-                </div>
-                <div class="projectDescribe">
-                    <h1><strong>Portifólio</strong></h1>
-                    <p>No momento estou trabalhando em um <strong>back-end</strong> para o portifólio, implementando um back-end para permitir que eu modifique as fotos, textos e adicione ou remova projetos, através de uma api. <br>
-                    O front foi desenvolvido quase completamente em HTML5 e Css3, com exceção do menu e interação com as técnologias, que foram implementadas com JavaScrip. <br>
-                    O back-end está sendo desenvolvido ultilizando python com django-framework </p>
-                </div>
-            </div>
-
-            <div class="projectsContainer">
-                <div class="projectImage">
-                    <img src="assets/images/pictures/em-breve.png" alt="imagem de projeto" class="projectThumb">
-                </div>
-                <div class="projectDescribe">
-                    <h1>Em breve</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut perferendis, unde alias, magni repellat enim sapiente velit quaerat officia recusandae voluptate laboriosam? At, illum? Nihil, adipisci? Totam optio nemo architecto?</p>
-                </div>
-            </div>
-
-            <div class="projectsContainer">
-                <div class="projectImage">
-                    <img src="assets/images/pictures/em-breve.png" alt="imagem de projeto" class="projectThumb">
-                </div>
-                <div class="projectDescribe teste">
-                    <h1>Em breve</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut perferendis, unde alias, magni repellat enim sapiente velit quaerat officia recusandae voluptate laboriosam? At, illum? Nihil, adipisci? Totam optio nemo architecto?</p>
-                </div>
-            </div>
-
-        </div>
-    </main>
+    <!-- Projetos -->
+    <a name="projetos"></a>
+    <div class="projetos-container">
+        <h1 class="header-section">Meus Projetos:</h1>
+        <hr>
+        <!-- Todos os projetos na lista -->
+        <section class="grid-projetos">
+            <aside class="imagens-projetos">
+                <img src="assets/images/pictures/portifolio.png">
+            </aside>
+            <article class="textos-projetos">
+                <h1>Portifólio:</h1>
+                <p>
+                    No momento estou trabalhando em um back-end para o portifólio, implementando um back-end para permitir que eu modifique as fotos, textos e adicione ou remova projetos, através de uma api.
+                    O front foi desenvolvido quase completamente em HTML5 e Css3, com exceção do menu e interação com as técnologias, que foram implementadas com JavaScrip.
+                    O back-end está sendo desenvolvido ultilizando python com django-framework
+                </p>
+                <p><a href="#" target="_blank">Acessar o projeto completo</a></p>
+            </article>
+        </section>
+        <hr>
+    </div>
+    <!-- Fim do conteudo -->
     <footer>
-        <p>Criado por Yuran Porto</p>
-        <p>E-mail: yuranporto@gmail.com</p>
+        <div class="criado-por">
+            <p>Criado por: <span>Yuran Porto</span></p>
+        </div>
+        <div class="contato">
+            <p>Contato: </p>
+            <a href = "mailto:yuranporto@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+            <a href="https://wa.me/5512982096857" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" target="_blank"></a>
+        </div>
     </footer>
+
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/tecnologias.js"></script>
 </body>
 </html>
